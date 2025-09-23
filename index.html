@@ -22,34 +22,34 @@
                 <input class="sensiveis" type="email" id="email" name="email" required>
 
                 <label for="senha">Senha:</label>
-                <input class="sensiveis" type="password" id="senha" name="senha" required>
+                <input class="sensiveis" type="password" id="senha" name="senha" minlength="6" required>
                 
                 <label for="dtnsc">Data de nascimento:</label>
-                <input type="date" id="senha" name="senha" required>
+                <input type="date" id="dtnsc" name="data-nascimento" required>
 
                 <label>Gênero:</label>
                 <div class="select">
-                    <input type="radio" id="M" name="masculino" required>
+                    <input type="radio" id="M" name="genero" value="masculino" required>
                     <label for="M">Masculino</label>
-                    <input type="radio" id="F" name="Feminino" required>
+                    <input type="radio" id="F" name="genero" value="feminino" required>
                     <label for="F">Feminino</label>
-                    <input type="radio" id="o" name="Outro" required>
-                    <label for="M">Outro</label>
+                    <input type="radio" id="O" name="genero" value="outro" required>
+                    <label for="O">Outro</label>
                 </div>
                 
             </fieldset>
             <fieldset class="fieldset">
                 <legend>Preferências </legend>
                     <div class="select">
-                    <input type="radio" id="p" name="programação" required>
+                    <input type="checkbox" id="p" name="programação" required>
                     <label for="M">Programação</label>
-                    <input type="radio" id="d" name="design" required>
+                    <input type="checkbox" id="d" name="design" required>
                     <label for="F">Design</label>
-                    <input type="radio" id="g" name="games" required>
+                    <input type="checkbox" id="g" name="games" required>
                     <label for="M">Games</label>
-                    <input type="radio" id="Mu" name="musica" required>
+                    <input type="checkbox" id="Mu" name="musica" required>
                     <label for="M">Musicas</label>
-                    <input type="radio" id="e" name="esporte" required>
+                    <input type="checkbox" id="e" name="esporte" required>
                     <label for="M">Esportes</label>
                 </div>
 
@@ -59,6 +59,9 @@
                     <option value="MS">Mato Grosso do Sul</option>
                     <option value="RS">Rio Grande do Sul</option>
                     <option value="RR">Roraima</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="PR">Paraná</option>
                 </select>
                 <label for="observaçoes">Observações:</label>
                 <textarea class="areatexto" name="observaçoes" id="obs"> </textarea>                
